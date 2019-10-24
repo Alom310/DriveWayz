@@ -525,8 +525,8 @@ if 'ON_HEROKU' in os.environ:
 #         )
 
 
-    except ValueError:
-        pass
+#     except ValueError:
+#         pass
 
 
     app.run(debug=DEBUG, port=PORT)
