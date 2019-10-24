@@ -38,6 +38,9 @@
 
         <div class="d-flex flex-column col align-items-center">
         <div class="card h-100 text-center mb-2" style="width: 18rem;">
+            <div class="card-header">
+                {{parking.description}}
+            </div>
             <a href={{url_for('parking', parkingid=parking.id)}}><img class="card-img-top" id='' src="static/parking_pics/{{parking.parkingPic}}"/></a>
             <div class="card-body">
                 <p class="card-text">{{parking.price}}</p>
