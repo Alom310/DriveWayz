@@ -20,14 +20,14 @@ class User(UserMixin, Model):
     joined_at = DateTimeField(default=datetime.datetime.now())
     is_host = BooleanField(default=False)
     profileImgUrl = CharField(max_length=255, null=True, default= 'default.png')
-    carPic = CharField(max_length=255, null=True, default='defcar.png')
+    carPic = CharField(max_length=255, null=True, default='defaultcar.png')
     
     class Meta:
         database = DATABASE
         order_by = ('-joined_at',)
         
     @classmethod
-    def create_user(cls, username, email, password, fullname, phoneNumber, address, profileImgUrl='default.png', carPic='defcar.png', is_host=False):
+    def create_user(cls, username, email, password, fullname, phoneNumber, address, profileImgUrl='default.png', carPic='defaultcar.png', is_host=False):
         try:
             cls.create(
                 username = username,
