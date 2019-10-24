@@ -91,6 +91,7 @@ footer{
 #parking_pic{
     width:240px;
     height:160px;
+    border-radius: 1em;
 }
 
 #profile_img{
