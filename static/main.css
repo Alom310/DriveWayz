@@ -4,7 +4,7 @@
 
 #landingpage{
     background-image: url(./birds-eye-view-houses.jpg);
-    background-size: 100%;
+    background-size: 100vh;
     min-height: 699px;
     position: relative;
     text-align: center;
