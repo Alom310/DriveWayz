@@ -120,7 +120,7 @@ def parking(parkingid):
 
         return redirect(url_for('payment', parkingid=parking))
 
-    return render_template('parkingspace.html', parking=parking, form=form, reviews = reviews, review_form=review_form, reservations=reservations)
+    return render_template('parkingSpace.html', parking=parking, form=form, reviews = reviews, review_form=review_form, reservations=reservations)
 
 
 @app.route('/profile/<username>', methods=['GET', 'POST'])

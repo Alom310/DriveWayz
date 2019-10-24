@@ -10,6 +10,7 @@
     text-align: center;
     -webkit-animation: fadein 3s; 
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
