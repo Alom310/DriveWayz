@@ -36,13 +36,15 @@
             <div>{{parking.location}}</div>
         </div> -->
 
-        <div class="card d-flex flex-column col align-items-center text-center mb-2" style="width: 18rem;">
+        <div class="d-flex flex-column col align-items-center">
+        <div class="card text-center mb-2" style="width: 18rem;">
             <a href={{url_for('parking', parkingid=parking.id)}}><img class="card-img-top" id='parking_pic' src="static/parking_pics/{{parking.parkingPic}}"/></a>
             <div class="card-body">
                 <p class="card-text">{{parking.price}}</p>
                 <p class="card-text">{{parking.description}}</p>
                 <p class="card-text">{{parking.location}}</p>
             </div>
+        </div>
         </div>
     {% endfor %}
 </div>
