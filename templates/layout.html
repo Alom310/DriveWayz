@@ -88,7 +88,7 @@
 
         {% if current_user.is_authenticated %}
         <!-------------- NAVBAR ------------------->
-            <div class="d-flex justify-content-between" id="navbar">
+            <div class="d-flex justify-content-between mb-2" id="navbar">
                 <div class="d-flex justify-content-start">
                     <img id="logo" src={{url_for("static", filename="Logo.png")}}>
                     <a id="#" href="{{ url_for('index') }}"><h3>DriveWayz</h3></a>
@@ -127,7 +127,7 @@
         {% block content %}
         {% endblock %}
     </div>
-    
+
     <footer class="d-flex flex-column align-items-center">    
             <p class="copyright">&copy;2019 DriveWayz, Alomgir Hossain</p>
     </footer>

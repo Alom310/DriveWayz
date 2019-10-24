@@ -1,7 +1,6 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="container">
 <div id='parking_page_div'>
     <div id='parking_post_div' class="d-flex flex-column col align-items-center">
             <img src="{{ url_for ('static',filename='parking_pics/' + parking.parkingPic) }}"/>
@@ -65,7 +64,7 @@
         </form>
     </div>
 </div>
-</div>
+
 
 
 {% endblock %}
